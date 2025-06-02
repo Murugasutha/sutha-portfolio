@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body{
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #FFE3B2, #FDD3E1);
+  font-family: 'Poppins', sans-serif;}
+
+.gradient{
+  background: linear-gradient(to bottom right, #f7d8b3, #fce7ee);
+}
+
+.maroon{
+  color: #4a1a1a !important;
+}
+
+.nav-link-custom{
+  color: #7a4040 !important;
+}
+
+.nav-link-custom:hover{
+  color: #4a1a1a !important;
+}
+
+.light-maroon{
+  color: #4a1a1a !important;
+}
+
+.icon-link{
+  color: #7a4040;
+  font-size: 30px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.icon-link:hover{
+  transform: scale(1.2);
+  color: #4a1a1a;
+}
+
+.education-card{
+  transition: transform 0.3s ease;
+}
+
+.education-card:hover{
+  transform: scale(1.20);
+}
+
+.education-title {
+  position: relative;
+  display: inline-block;
+}
+
+.education-title::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 3px;
+  background-color: #4a1a1a; 
+  border-radius: 5px;
+}
+
+
+.experience-title {
+  position: relative;
+  display: inline-block;
+  padding: 8px;
+}
+
+.experience-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+  width: 150px;
+  height: 3px;
+  background-color: #4a1a1a; 
+  border-radius: 5px;
+}
+
+.timeline-container {
+    position: relative;
+    padding-left: 40px;
+    border-left: 4px solid #7a4040; 
+    margin-top: 2rem;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    padding-left: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -12px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #7a4040;
+    border: 3px solid #fff;
+    box-shadow: 0 0 0 2px #7a4040;
+}
+
+
+.skill-card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+}
+
+.skill-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.about-card {
+  background-color: #f8f9fa;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  padding: 1.5rem;
+}
+
+.icon-hover {
+  transition: all 0.3s ease;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.about-card:hover{
+  transform: translateY(-5px);
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
+}
+
+.about-card:hover .icon-hover{
+  transform: scale(1.8) rotate(5deg);
+  color: #a4161a; 
+}
+
