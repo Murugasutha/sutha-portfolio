@@ -42,6 +42,7 @@ function Intro() {
                             <img src={intro3D} 
                             alt="intro-3d-image" 
                             className='img-fluid rounded'
+                            loading='eager'
                             style={{
                                 width: '450px',
                                 height: '630px',
