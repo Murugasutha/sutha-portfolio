@@ -5,7 +5,7 @@ import { FaCode, FaLightbulb, FaHeart } from 'react-icons/fa';
 function About() {
     return ( 
         <>
-            <section id="about" className='d-flex align-items-center min-vh-100'>
+            <section id="about" className='py-5'>
                 <Container>
                     <h1 className='display-5 maroon mb-5 mt-5 text-center ' data-aos="fade-down">
                         <span className='education-title'>About Me</span>

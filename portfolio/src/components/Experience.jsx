@@ -28,7 +28,7 @@ function Experience() {
     ];
 
     return (
-        <section id="experience" className="d-flex align-items-center min-vh-100">
+        <section id="experience" className=" py-5">
             <Container>
                 <h1 className="display-4 maroon mb-5 mt-5 text-end" data-aos="fade-left">
                     <span className="experience-title">Professional Experience</span>
@@ -36,11 +36,12 @@ function Experience() {
                 <Row>
                     <Col md={6} data-aos="fade-right" >
                         <img src={experienceImg} 
-                        alt="intro-3d-image" 
+                        alt="Experience illustration" 
                         className='img-fluid rounded'
+                        loading='lazy'
                         style={{
-                        width: '450px',
-                        height: '830px',
+                        width: '100%',
+                        height: 'auto',
                         objectFit: 'cover'
                         }}
                         />

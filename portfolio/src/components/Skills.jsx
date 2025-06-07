@@ -40,7 +40,7 @@ function Skills() {
   const renderGrid = (icons) => (
     <div className="d-grid gap-3" style={{ gridTemplateColumns: 'repeat(3, 1fr)' }}>
       {icons.map((icon, i) => (
-        <div key={i} className="text-center icon-link p-2">
+        <div key={i} className="text-center icon-link py-2">
           {icon}
         </div>
       ))}
@@ -48,30 +48,30 @@ function Skills() {
   );
 
   return (
-    <section id="skills" className='d-flex align-items-center min-vh-100'>
+    <section id="skills" className='py-5'>
       <Container>
         <h1 className='display-4 maroon mb-5 mt-5 text-start' data-aos="fade-right">
           <span className='education-title'>Technical Skills</span>
         </h1>
         <Row className='g-3 my-5'>
-          <Col md={4} data-aos="fade-left">
-            <Card className="border-0 p-4 text-center skill-card" bg="light">
+          <Col xs={12} md={4} >
+            <Card className="border-0 p-4 text-center skill-card" bg="light" data-aos="fade-left">
                 <CardTitle className="fw-bold maroon">FrontEnd</CardTitle>
                 <CardBody>
                     {renderGrid(frontend)}
                 </CardBody>
             </Card>
           </Col>
-          <Col md={4} data-aos="fade-in">
-            <Card className="border-0 p-4 text-center skill-card" bg="light">
+          <Col xs={12} md={4} >
+            <Card className="border-0 p-4 text-center skill-card" bg="light" data-aos="fade-in">
                 <CardTitle className="fw-bold maroon">Backend</CardTitle>
                 <CardBody>
                     {renderGrid(backend)}
                 </CardBody>
             </Card>
           </Col>
-          <Col md={4} data-aos="fade-right">
-            <Card className="border-0 p-4 text-center skill-card" bg="light">
+          <Col xs={12} md={4} >
+            <Card className="border-0 p-4 text-center skill-card" bg="light" data-aos="fade-right">
                 <CardTitle className="fw-bold maroon">Tools & Platforms</CardTitle>
                 <CardBody>
                     {renderGrid(tools)}

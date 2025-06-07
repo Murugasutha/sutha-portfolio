@@ -10,7 +10,7 @@ function Intro() {
             <section id="intro" className='d-flex align-items-center min-vh-100'>
                 <Container>
                     <Row className='align-items-center'>
-                        <Col md={6} >
+                        <Col md={6} xs={12} className='mt-4'>
                             <NavbarComponent/>
                             <div className="text-center text-md-start" data-aos="fade-right">
                                 <h1 className="display-5 fw-bold maroon">Hi, I'm Muruga Sutha Kailasam</h1>
@@ -38,11 +38,12 @@ function Intro() {
 
                         </Col>
 
-                        <Col md={6} className='text-center' data-aos="fade-left">
+                        <Col md={6} className='text-center' >
                             <img src={intro3D} 
                             alt="intro-3d-image" 
                             className='img-fluid rounded'
                             loading='eager'
+                            data-aos="fade-left"
                             style={{
                                 width: '450px',
                                 height: '630px',

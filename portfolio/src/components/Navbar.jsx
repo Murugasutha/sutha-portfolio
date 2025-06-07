@@ -1,13 +1,13 @@
 import React from "react";
-import {Navbar, Nav, Container} from "react-bootstrap";
+import {Navbar, Nav} from "react-bootstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function NavbarComponent(){
     return(
             
-                <Navbar bg="transparent"  style={{top: '-130px'}} data-aos="fade-down">
-                        <Navbar.Toggle aria-controls='navbar-nav'/>
-                        <Navbar.Collapse id='navbar-nav'>
+                <Navbar bg="transparent" className="d-none d-lg-flex"  style={{top: '-130px'}} data-aos="fade-down">
+                        {/* <Navbar.Toggle aria-controls='navbar-nav'/> */}
+                        {/* <Navbar.Collapse id='navbar-nav'> */}
                             <Nav className='gap-3 py-2 fs-5'>
                                 <Nav.Link href='#about' className="nav-link-custom">About</Nav.Link>
                                 <Nav.Link href="#education" className="nav-link-custom">Education</Nav.Link>
@@ -15,7 +15,7 @@ function NavbarComponent(){
                                 <Nav.Link href="#experience" className="nav-link-custom">Experience</Nav.Link>
                                 <Nav.Link href="#projects" className="nav-link-custom">Projects</Nav.Link>
                             </Nav>
-                        </Navbar.Collapse>
+                        {/* </Navbar.Collapse> */}
                     </Navbar>
           
     )
