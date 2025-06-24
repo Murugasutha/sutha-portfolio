@@ -49,7 +49,7 @@ function Projects() {
       image: 'https://via.placeholder.com/400x200?text=Doemart',
       description: 'A RESTful API built with Express.js and SQLite to manage restaurants and dishes. Perfect for learning full-stack basics, testing frontend apps, or building your own food-related platform.',
       techStack: ['Node.js', 'Express.js', 'Sequelize', 'SQLite'],
-      github: 'https://github.com/Murugasutha/doemart',
+      github: 'https://github.com/Murugasutha/fork-and-code',
       live: null
     },
   ];

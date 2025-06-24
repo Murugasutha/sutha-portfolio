@@ -9,7 +9,7 @@ import About from './components/About'
 import Skill from './components/Skill'
 import Resume from './Resume'
 import ScrollToTopButton from './components/ScrollToTopButton'
-import FloatingActionButton from './FloatingActionButton'
+import FloatingActionButton from './components/FloatingActionButton'
 
 
 function App() {
