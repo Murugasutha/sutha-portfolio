@@ -30,11 +30,11 @@ function Experience() {
     return (
         <section id="experience" className=" py-5">
             <Container>
-                <h1 className="display-4 maroon mb-5 mt-5 text-end" data-aos="fade-left">
-                    <span className="experience-title">Professional Experience</span>
+                <h1 className="display-4 maroon mb-5 mt-5 text-center" data-aos="fade-down">
+                    <span className="education-title">Professional Experience</span>
                 </h1>
                 <Row>
-                    <Col md={6} data-aos="fade-right" >
+                    <Col xs={12} md={6} className="mb-4 mb-md-0" data-aos="fade-right" >
                         <img src={experienceImg} 
                         alt="Experience illustration" 
                         className='img-fluid rounded'
@@ -46,7 +46,7 @@ function Experience() {
                         }}
                         />
                     </Col>
-                    <Col md={6}>
+                    <Col xs={12} md={6} className="mb-4 mb-md-0">
                         <div className="timeline-container">
                             {experienceData.map((exp, index) => (
                                 <div key={index} className='timeline-item' data-aos="fade-up" data-aos-duration={1200 + index}>

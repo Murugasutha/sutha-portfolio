@@ -118,21 +118,6 @@ body{
     box-shadow: 0 0 0 2px #7a4040;
 }
 
-
-.skill-card {
-  background-color: #f8f9fa;
-  border: none;
-  border-radius: 20px;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  padding: 1.5rem;
-}
-
-.skill-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.12);
-}
-
 .about-card {
   background-color: #f8f9fa;
   border: none;
@@ -140,6 +125,13 @@ body{
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   padding: 1.5rem;
+}
+
+.icon-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
 .icon-hover {
@@ -155,13 +147,52 @@ body{
 
 .about-card:hover .icon-hover{
   transform: scale(1.8) rotate(5deg);
-  color: #a4161a; 
+  color: #7a4040; 
+}
+
+.footer-icon-link{
+  color: #FDD3E1;
+  font-size: 25px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-icon-link:hover{
+  transform: scale(1.20);
+  color: #fff;
 }
 
 @media (max-width: 768px) {
+  body{
+    overflow-x: hidden;
+  }
   section {
     min-height: auto !important;
     display: block !important;
     align-items: start !important;
   }
+
+  h1.display-5 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .icon-link {
+    font-size: 22px;
+  }
+
+  #about h1 {
+    font-size: 1.8rem;
+  }
+  .about-card {
+    padding: 1rem;
+  }
+
+  #experience h1 {
+    font-size: 1.8rem;
+  }
+
 }
+

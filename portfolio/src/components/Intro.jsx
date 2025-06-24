@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Row, Col, Navbar, Nav} from 'react-bootstrap';
+import { Container, Row, Col} from 'react-bootstrap';
 import intro3D from '../assets/intro.png'
 import NavbarComponent from './Navbar';
 
@@ -7,7 +7,7 @@ function Intro() {
 
     return ( 
         <>
-            <section id="intro" className='d-flex align-items-center min-vh-100'>
+            <section id="intro">
                 <Container>
                     <Row className='align-items-center'>
                         <Col md={6} xs={12} className='mt-4'>
@@ -39,17 +39,18 @@ function Intro() {
                         </Col>
 
                         <Col md={6} className='text-center' >
-                            <img src={intro3D} 
-                            alt="intro-3d-image" 
-                            className='img-fluid rounded'
-                            loading='eager'
-                            data-aos="fade-left"
-                            style={{
-                                width: '450px',
-                                height: '630px',
-                                objectFit: 'cover'
-                            }}
-                            />
+                            <div data-aos="fade-up">
+                                <img src={intro3D} 
+                                alt="intro-3d-image" 
+                                className='img-fluid rounded'
+                                loading='eager'
+                                style={{
+                                    width: '450px',
+                                    height: 'auto',
+                                    objectFit: 'cover'
+                                }}
+                                />
+                            </div>
                         </Col>
                     </Row>
                 </Container>
