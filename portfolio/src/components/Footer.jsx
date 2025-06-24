@@ -19,7 +19,7 @@ function Footer() {
               <a href="https://twitter.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-dark fs-4">
                 <FaTwitter className="footer-icon-link"/>
               </a>
-                <a href="murugasutha18@gmail.com" target="_blank" rel="noopener noreferrer" className="text-dark fs-4">
+                <a href="mailto:murugasutha18@gmail.com" target="_blank" rel="noopener noreferrer" className="text-dark fs-4">
                 <FaEnvelope className="footer-icon-link"/>
               </a>
             </div>
